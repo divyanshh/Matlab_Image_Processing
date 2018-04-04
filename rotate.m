@@ -1,14 +1,18 @@
 Im = imread('abc.jpg');
+m = size(Im,1);
 
-[m,n,o] = size(Im);
-
-Im_r = zeros(n,m,3);
-
-for i = 1:m
-    Im_r(i,:,3) = Im(:,i,3);
+for i = 1:size(Im,1)
+    for j = 1:size(Im,2)
+        col = m - i ;
+        if(col < 1)
+            col = 1;
+        end
+        Im_r(j,col,:) = Im(i,j,:);
+    end
+    
 end
 
 figure
-imshow(Im_r)
-figure
 imshow(Im)
+figure
+imshow(Im_r)

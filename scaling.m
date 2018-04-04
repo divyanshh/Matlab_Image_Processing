@@ -6,8 +6,8 @@ q = 2;
 
 for i = 1:p*size(Im,1)
     for j = 1:q*size(Im,2)
-        x = floor(i/p);
-        y = floor(j/q);
+        x = round(i/p);
+        y = round(j/q);
         
         if(x < 1)
             x = 1;
