@@ -1,0 +1,8 @@
+clc;
+
+n = input('no of probabilities');
+
+str = []
+for i=1:n
+    str(i) = input('enter value',s);
+    p()
