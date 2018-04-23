@@ -32,7 +32,8 @@ for j=1:56
     data_retrieve(1,j) = bitget(data_hidden_image(1,j),1);
 end
     
-data_retrieve
+b = reshape(data_retrieve , 8 , 7)
+bin2dec(b)
 
 original_image = s(:,:,1)*(2^0)+s(:,:,2)*(2^1)+s(:,:,3)*(2^2)+s(:,:,4)*(2^3)+s(:,:,5)*(2^4)+s(:,:,6)*(2^5)+s(:,:,7)*(2^6)+s(:,:,8)*(2^7);
 difference = original_image - data_hidden_image;

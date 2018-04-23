@@ -1,7 +1,8 @@
+clear;
 img=imread('sphere5.jpg');
 
-fact1 =2;
-fact2 = 5 ;
+fact1 = 4;
+fact2 = 4 ;
 for i=1:fact1*size(img,1)
     for j=1:fact2*size(img,2)
         x=floor(i/fact1);

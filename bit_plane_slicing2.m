@@ -23,5 +23,5 @@ subplot(2,5,5);imshow(s(:,:,4));title('plane4');
 subplot(2,5,6);imshow(s(:,:,5));title('plane5');
 subplot(2,5,7);imshow(s(:,:,6));title('plane6');
 subplot(2,5,8);imshow(s(:,:,7));title('plane7');
-subplot(2,5,8);imshow(s(:,:,8));title('plane8');
-subplot(2,5,9);imshow(uint8(b));title('reformed');
+subplot(2,5,9);imshow(s(:,:,8));title('plane8');
+subplot(2,5,10);imshow(uint8(b));title('reformed');

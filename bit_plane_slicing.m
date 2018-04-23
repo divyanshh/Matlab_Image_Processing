@@ -13,6 +13,7 @@ plane5 = mod(floor(cd/16), 2);
 plane6 = mod(floor(cd/32), 2);
 plane7 = mod(floor(cd/64), 2);
 plane8 = mod(floor(cd/128), 2);
+compressed_img = 128*plane8 + 64*plane7 + 32*plane6 + 16*plane5;
 
 subplot(2, 5, 1);
 imshow(im);
@@ -41,8 +42,6 @@ title('Bit Plane 7');
 subplot(2, 5, 9);
 imshow(plane8);
 title('Bit Plane 8');
-
-compressed_img = 128*c8 + 64*c7 + 32*c6 + 16*c5;
 subplot(2, 5, 10);
 imshow(uint8(compressed_img));
 title('Compressed Image');

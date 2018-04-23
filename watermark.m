@@ -24,7 +24,7 @@ end
 for i = 1:p*size(im2,1)
     for j = 1:q*size(im2,2)
         
-        im_n(i,j,:) = 0.4 * im1(i,j,:) + im_rescale(i,j,:);
+        im_n(i,j,:) = 0.1 * im1(i,j,:) + im_rescale(i,j,:);
     end
 end
 
