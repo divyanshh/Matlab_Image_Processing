@@ -16,8 +16,8 @@ for i = 1:size(Im , 1)
     end
 end
 
-subplot(2,3,1),imshow(Im)
-subplot(2,3,2),imshow(Im_log_col)
-subplot(2,3,3),imshow(Im_gray)
-subplot(2,3,4),imshow(Im_log_gray)
-subplot(2,3,5),imshow(Im_sub)
+subplot(2,3,1),imshow(Im);title('Original')
+subplot(2,3,2),imshow(Im_log_col);title('Log Transformation Of Colored')
+subplot(2,3,3),imshow(Im_gray);title('Grayscale')
+subplot(2,3,4),imshow(Im_log_gray);title('Log Transformation Of Grayscale')
+subplot(2,3,5),imshow(Im_sub);title('Difference b/w transformations')

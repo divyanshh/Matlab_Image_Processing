@@ -2,8 +2,7 @@ clear;
 a=imread('sphere5.jpg');
 %figure,imshow(a)
 d = imresize(a,[50 50]);
-figure,imshow(d);
-
+figure,imshow(d)
 a=double(d);
 b=a;
 %figure,imshow(a)
@@ -23,7 +22,8 @@ for i=1:r
         sum=0;
         for k=1:r
             for l=1:c
-                sum=sum+(a(k,l,:)*cos((((2*(k-1))+1)*pi*(i-1))/2*r)*cos((((2*(l-1))+1)*pi*(j-1))/2*c) );
+                sum=sum+(a(k,l,:)*cos((((2*(k-1))+1)*pi*(i-1))/2*r)* ...
+                    cos((((2*(l-1))+1)*pi*(j-1))/2*c) );
             end
         end
         b(i,j,:)=g*h*sum;
